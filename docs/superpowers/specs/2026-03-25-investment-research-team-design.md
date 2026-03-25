@@ -132,5 +132,6 @@ CONVICTION: [Low/Medium/High]
 
 - Fractional shares are available (most modern brokerages support this).
 - Budget is the total to deploy, not per-position.
-- Research uses publicly available information and current market context.
+- Research uses publicly available information via web search and current market context.
+- The Portfolio Integrator has tie-breaking authority if the board cannot reach full consensus on a pitch verdict.
 - This is not financial advice — the team produces analysis for the user's consideration.
