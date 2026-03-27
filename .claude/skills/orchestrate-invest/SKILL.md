@@ -91,6 +91,25 @@ Once the board has approved a shortlist, ask the Portfolio Integrator to compile
 
 Present this to the user in a clean, readable format.
 
+## Phase 6 — Save Report
+
+After presenting the final recommendations, save a standalone HTML report to the `/outputs` directory:
+
+- **Filename:** `invest-AMOUNT-YYYY-MM-DD.html` (e.g., `invest-500-2026-03-27.html`)
+- **Format:** A self-contained, single-file HTML document with inline CSS (no external dependencies)
+- The report should be professional and readable when opened in a browser
+- Include all final portfolio recommendations, board verdicts, risk warnings, macro context, key dates, and trim/exit triggers
+- Use a clean layout with:
+  - A header with budget, date, and team summary
+  - A verdicts table (color-coded: green for Advance, red for Reject)
+  - Individual position cards with thesis, bull/bear cases, risk, conviction, and allocation
+  - A portfolio summary bar or table showing allocation percentages
+  - Key dates and trim/exit triggers sections
+  - Risk warnings section
+  - Macro context section
+  - Disclaimer footer
+- Use a modern, minimal design (dark text on light background, subtle borders, good typography)
+
 ## Important Notes
 
 - This is NOT financial advice. Present findings as analysis for the user's consideration.
