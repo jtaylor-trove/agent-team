@@ -13,7 +13,9 @@ A validated USD budget amount (e.g., 500, 10000).
 
 ## Team Setup
 
-Create an agent team with 6 teammates. Spawn all 6 using the Agent tool with the role prompts defined below.
+**Step 1: Create the team.** You MUST call `TeamCreate` first with `team_name: "invest"` before spawning any agents. This sets up the shared task list and tmux split panes so the user can see all agents working.
+
+**Step 2: Spawn teammates.** After TeamCreate succeeds, spawn all 6 using the Agent tool with `team_name: "invest"` and the role prompts defined below.
 
 **Research Team (spawn in parallel):**
 
