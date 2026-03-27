@@ -9,9 +9,19 @@ A multi-agent system built on [Claude Code](https://docs.anthropic.com/en/docs/c
 ### Prerequisites
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
+- [tmux](https://github.com/tmux/tmux) installed — the team uses tmux split panes so you can watch all six agents work simultaneously
 - Agent teams enabled (already configured in `.claude/settings.json`)
 
 ### Run
+
+Start Claude Code **inside a tmux session** so the agents can create split panes:
+
+```bash
+tmux
+claude
+```
+
+Then run the invest command:
 
 ```
 /invest <amount>
@@ -62,6 +72,12 @@ Research Sprint ──> Board Review ──> Verdict ──> Iterate (max 3x) �
 4. **Iterate** — Researchers address feedback; the cycle repeats (up to 3 rounds)
 5. **Final Report** — Portfolio Integrator compiles ranked recommendations with dollar allocations
 6. **Output** — A standalone HTML report is saved to `outputs/`
+
+### tmux Experience
+
+When the team launches, `TeamCreate` automatically splits your tmux window into panes — one per agent. You can watch all six agents researching, debating, and deliberating in real time. The team lead coordinates from the original pane.
+
+> **Tip:** Use `Ctrl-b z` to zoom into a single pane, and `Ctrl-b z` again to zoom back out. `Ctrl-b arrow` moves between panes.
 
 ## Output
 
